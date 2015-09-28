@@ -20,7 +20,7 @@ print ("\nReading Data:",fileContent);
 local newData = string.reverse(fileContent);
 print ("\nOverwriting Data:",newData);
 
-write_file("IO/text.txt",newData);
+write_file("text.txt",newData);
 
 fileContent = read_file("text.txt");
 print("\nReading File's Updated Contents:",fileContent);
