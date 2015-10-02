@@ -14,13 +14,22 @@ local function write_file(path,data)
     file:close()
 end
 
-local fileContent = read_file("text.txt");
+local answer
+io.write("Input a *text* filename to read [defaults to text.txt as provided]: ")
+io.flush()
+answer=io.read()
+
+if answer=="" then
+	answer = "text.txt"
+end
+
+local fileContent = read_file(answer);
 print ("\nReading Data:",fileContent);
 
 local newData = string.reverse(fileContent);
 print ("\nOverwriting Data:",newData);
 
-write_file("text.txt",newData);
+write_file(answer,newData);
 
-fileContent = read_file("text.txt");
+fileContent = read_file(answer);
 print("\nReading File's Updated Contents:",fileContent);
