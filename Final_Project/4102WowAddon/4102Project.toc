@@ -1,0 +1,17 @@
+## Interface: 60200
+## Version: 1.0
+
+## Title: 4102 Project
+## Notes: Allows the player move and resize their bags.
+
+## SavedVariables: WoW4102DB
+## SavedVariablesPerCharacter: WoW4102DBPC
+
+## Load main file
+4102Project.lua
+
+##Load Config (cmd line) file
+4102Config.lua
+
+##Helps with creating frames
+4102FrameHelper.lua
